@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.LibMan", "Cake.LibMan\Cake.LibMan.csproj", "{A3678934-86E4-4834-AC0F-56082C8BDB05}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.LibMan.Tests", "Cake.LibMan.Tests\Cake.LibMan.Tests.csproj", "{A753484A-99F7-4241-8389-1F5A6C681255}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3678934-86E4-4834-AC0F-56082C8BDB05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3678934-86E4-4834-AC0F-56082C8BDB05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3678934-86E4-4834-AC0F-56082C8BDB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3678934-86E4-4834-AC0F-56082C8BDB05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A753484A-99F7-4241-8389-1F5A6C681255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A753484A-99F7-4241-8389-1F5A6C681255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A753484A-99F7-4241-8389-1F5A6C681255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A753484A-99F7-4241-8389-1F5A6C681255}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E86D7D74-1DFB-4F11-9B95-2AF7A775122C}
+	EndGlobalSection
+EndGlobal

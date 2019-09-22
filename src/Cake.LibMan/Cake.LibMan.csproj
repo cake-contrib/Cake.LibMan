@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Cake.LibMan</AssemblyName>
+    <RootNamespace>Cake.LibMan</RootNamespace>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Authors>Louis Fischer, Cake-Contrib</Authors>
+    <Company>Cake-Contrib</Company>
+    <Description>Cake.LibMan is an Addin that extends Cake for executing commands with the LibMan (Library Manager) command line interface (cli).</Description>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DocumentationFile>bin\Debug\netstandard2.0\Cake.LibMan.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\Cake.LibMan.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Cake.Core" Version="0.34.1" PrivateAssets="All" />
+    <PackageReference Include="Cake.Testing" Version="0.34.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clean\" />
+    <Folder Include="Cache\" />
+    <Folder Include="Install\" />
+    <Folder Include="Restore\" />
+  </ItemGroup>
+</Project>
