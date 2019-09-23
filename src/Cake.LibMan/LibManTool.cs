@@ -40,7 +40,7 @@ namespace Cake.LibMan
         /// <returns>The name of the tool.</returns>
         protected sealed override string GetToolName()
         {
-            return "Library Manager (LibMan)";
+            return "LibMan";
         }
 
         /// <summary>
@@ -70,14 +70,10 @@ namespace Cake.LibMan
         protected void RunCore(TSettings settings, ProcessSettings processSettings, Action<IProcess> postAction)
         {
             if (settings == null)
-            {
                 throw new ArgumentNullException(nameof(settings));
-            }
 
             if (!settings.CakeVerbosityLevel.HasValue)
-            {
                 settings.CakeVerbosityLevel = CakeLog.Verbosity;
-            }
 
             processSettings.RedirectStandardError = settings.RedirectStandardError;
             processSettings.RedirectStandardOutput = settings.RedirectStandardOutput;

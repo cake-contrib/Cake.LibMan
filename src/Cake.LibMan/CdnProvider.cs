@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Cake.LibMan
+﻿namespace Cake.LibMan
 {
     /// <summary>
     /// The name of the provider to use for the library acquisition.
@@ -10,20 +6,24 @@ namespace Cake.LibMan
     public enum CdnProvider
     {
         /// <summary>
+        /// Default cdn provider. Produces a blank argument
+        /// </summary>
+        Default = 0,
+        /// <summary>
         /// The #1 free and open source CDN built to make life easier for developers. https://cdnjs.com
         /// </summary>
-        cdnjs,
+        cdnjs = 1,
         /// <summary>
         /// The filesystem provider allows you to copy files from local file system, network drives and custom URIs. 
         /// </summary>
-        filesystem,
+        filesystem = 2,
         /// <summary>
         /// A free, fast, and reliable Open Source CDN for npm and GitHub
         /// </summary>
-        jsdelivr,
+        jsdelivr = 4,
         /// <summary>
         /// A fast, global content delivery network for everything on npm. Use it to quickly and easily load any file from any package using a URL.
         /// </summary>
-        unpkg
+        unpkg = 8
     }
 }

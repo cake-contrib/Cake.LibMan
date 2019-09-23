@@ -22,9 +22,7 @@
     <PackageReference Include="Cake.Testing" Version="0.34.1" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Clean\" />
     <Folder Include="Cache\" />
-    <Folder Include="Install\" />
-    <Folder Include="Restore\" />
+    <Folder Include="Uninstall\" />
   </ItemGroup>
 </Project>
