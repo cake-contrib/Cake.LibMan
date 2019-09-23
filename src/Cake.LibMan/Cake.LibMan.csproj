@@ -21,8 +21,4 @@
     <PackageReference Include="Cake.Core" Version="0.34.1" PrivateAssets="All" />
     <PackageReference Include="Cake.Testing" Version="0.34.1" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Cache\" />
-    <Folder Include="Uninstall\" />
-  </ItemGroup>
 </Project>

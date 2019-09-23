@@ -4,30 +4,30 @@ using Cake.Core.IO;
 using Cake.Core.Tooling;
 using System;
 
-namespace Cake.LibMan.Clean
+namespace Cake.LibMan.Cache
 {
     /// <summary>
-    /// Tool for deleting all library files defined in libman.json from the project
+    /// Tool for clearing the cache for a cdn provider or all cdn providers.
     /// </summary>
-    public class LibManCleanTool : LibManTool<LibManCleanSettings>
+    public class LibManCacheCleanTool : LibManTool<LibManCacheCleanSettings>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="LibManCleanTool"/> class.
+        /// Initializes a new instance of the <see cref="LibManCacheCleanTool"/> class.
         /// </summary>
         /// <param name="fileSystem">The file system.</param>
         /// <param name="environment">The environment.</param>
         /// <param name="processRunner">The process runner.</param>
         /// <param name="tools">The tool locator.</param>
         /// <param name="log">Cake log instance.</param>
-        public LibManCleanTool(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IToolLocator tools, ICakeLog log)
+        public LibManCacheCleanTool(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IToolLocator tools, ICakeLog log)
             : base(fileSystem, environment, processRunner, tools, log)
         { }
 
         /// <summary>
-        ///  Deletes library files previously restored via LibMan. Folders that become empty after this operation are deleted.
+        /// Clears library cache using the specified <see cref="LibManCacheCleanSettings"/> settings.
         /// </summary>
         /// <param name="settings">The settings.</param>
-        public void Clean(LibManCleanSettings settings)
+        public void CacheClean(LibManCacheCleanSettings settings)
         {
             if (settings == null)
                 throw new ArgumentNullException(nameof(settings));
