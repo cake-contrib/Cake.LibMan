@@ -30,7 +30,7 @@ namespace Cake.LibMan.Uninstall
             base.EvaluateCore(args);
 
             if (string.IsNullOrWhiteSpace(Library))
-                throw new ApplicationException($"Missing required {nameof(Library)} property.");
+                throw new ArgumentNullException(nameof(Library), "Must provide library name.");
 
             args.Append(Library);
         }
