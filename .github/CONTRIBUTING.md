@@ -1,5 +1,5 @@
 # How to contribute
-Contributions to Cake.MsDeploy are highly encouraged and desired. Below are some guidelines that will help make the process as smooth as possible.
+Contributions to Cake.LibMan are highly encouraged and desired. Below are some guidelines that will help make the process as smooth as possible.
 
 # Getting Started
 * Make sure you have a [GitHub account](https://github.com/signup/free)
@@ -9,7 +9,7 @@ Contributions to Cake.MsDeploy are highly encouraged and desired. Below are some
 * Fork the repository on GitHub
 
 # Suggesting Enhancements
-We want to know what you think is missing from Cake.MsDeploy and how it can be made better.
+We want to know what you think is missing from Cake.LibMan and how it can be made better.
 * When submitting an issue for an enhancement, please be as clear as possible about why you think the enhancement is needed and what the benefit of
 it would be.
 

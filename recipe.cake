@@ -13,14 +13,15 @@ BuildParameters.SetParameters(
     shouldRunDupFinder: false,
     shouldRunInspectCode: false,
     shouldRunCodecov: false,
-    shouldRunGitVersion: true);
+    shouldDeployGraphDocumentation: false,
+    shouldRunGitVersion: true,
+    shouldRunDotNetCorePack: true);
 
 BuildParameters.PrintParameters(Context);
 
 ToolSettings.SetToolSettings(
     context: Context,
-    dupFinderExcludePattern: new string[] {
-    BuildParameters.RootDirectoryPath + "/src/Cake.LibMan.Tests/**/*.cs" },
+    dupFinderExcludePattern: new string[] { BuildParameters.RootDirectoryPath + "/src/Cake.LibMan.Tests/**/*.cs" },
     testCoverageFilter: "+[*]* -[xunit.*]* -[Cake.Core]* -[Cake.Testing]* -[*.Tests]* -[Shouldly]*",
     testCoverageExcludeByAttribute: "*.ExcludeFromCodeCoverage*",
     testCoverageExcludeByFile: "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs");

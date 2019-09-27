@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.LibMan", "Cake.LibMan\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.LibMan.Tests", "Cake.LibMan.Tests\Cake.LibMan.Tests.csproj", "{A753484A-99F7-4241-8389-1F5A6C681255}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{6343F6D4-9917-46B2-8EF9-EE7AC395BB8D}"
+	ProjectSection(SolutionItems) = preProject
+		..\recipe.cake = ..\recipe.cake
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

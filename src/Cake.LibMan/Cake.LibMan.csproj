@@ -1,24 +1,48 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Cake.LibMan</AssemblyName>
     <RootNamespace>Cake.LibMan</RootNamespace>
-    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
   </PropertyGroup>
   <PropertyGroup>
-    <Authors>Louis Fischer, Cake-Contrib</Authors>
-    <Company>Cake-Contrib</Company>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Title>Cake.LibMan</Title>
+    <Version>0.1.0</Version>
     <Description>Cake.LibMan is an Addin that extends Cake for executing commands with the LibMan (Library Manager) command line interface (cli).</Description>
+    <Authors>louisfischer, Cake-Contrib</Authors>
+    <Company>Cake-Contrib</Company>
+    <Copyright>Copyright © 2019 Cake Contributions Organization</Copyright>
+    <PackageTags>Cake Script LibMan Library-Manager</PackageTags>
+    <PackageIconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics@a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</PackageIconUrl>
+    <PackageProjectUrl>http://cake-contrib.github.io/Cake.LibMan/</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/cake-contrib/Cake.LibMan.git</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/cake-contrib/Cake.LibMan/releases/tag/0.1.0</PackageReleaseNotes>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);PackBuildOutputs</TargetsForTfmSpecificContentInPackage>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
-  <PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard2.0\Cake.LibMan.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
     <DocumentationFile>bin\Release\netstandard2.0\Cake.LibMan.xml</DocumentationFile>
   </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Cake.Core" Version="0.34.1" PrivateAssets="All" />
-    <PackageReference Include="Cake.Testing" Version="0.34.1" />
+    <PackageReference Include="Cake.Core" Version="0.33.0" PrivateAssets="All" />
   </ItemGroup>
+  <Target Name="PackBuildOutputs" DependsOnTargets="SatelliteDllsProjectOutputGroup;DebugSymbolsProjectOutputGroup">
+    <ItemGroup>
+      <TfmSpecificPackageFile Include="$(OutputPath)\**\Cake.LibMan.*">
+        <PackagePath>lib\$(TargetFramework)\</PackagePath>
+      </TfmSpecificPackageFile>
+    </ItemGroup>
+  </Target>
+
 </Project>

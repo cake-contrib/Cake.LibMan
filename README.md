@@ -1,6 +1,6 @@
 # Cake.LibMan
 
-Cake.LibMan is an Addin that extends [Cake](http://cakebuild.net/) for executing commands with the LibMan (Library Manager) command line interface (cli).
+Cake.LibMan is an Addin that extends [Cake](http://cakebuild.net/) for executing commands with the  (Library Manager) command line interface (cli).
 In order to use this extension, the [LibMan CLI](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/libman-cli?#installation) will already have to be installed on the computer the cake build script is being executed on.
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://cake-contrib.mit-license.org)
@@ -10,7 +10,7 @@ In order to use this extension, the [LibMan CLI](https://docs.microsoft.com/en-u
 |                |                                             Stable                                              |                                                                     Pre-release                                                                      |
 | :------------: | :---------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: |
 | GitHub Release |                                                -                                                | [![GitHub release](https://img.shields.io/github/release/cake-contrib/Cake.LibMan.svg)](https://github.com/cake-contrib/Cake.LibMan/releases/latest) |
-|     NuGet      | [![NuGet](https://img.shields.io/nuget/v/Cake.svg)](https://www.nuget.org/packages/Cake.LibMan) |                      [![NuGet](https://img.shields.io/nuget/vpre/Cake.LibMan.svg)](https://www.nuget.org/packages/Cake.LibMan)                       |
+|     NuGet      | [![NuGet](https://img.shields.io/nuget/v/Cake.LibMan.svg)](https://www.nuget.org/packages/Cake.LibMan) |                      [![NuGet](https://img.shields.io/nuget/vpre/Cake.LibMan.svg)](https://www.nuget.org/packages/Cake.LibMan)                       |
 
 ## Build Status
 
@@ -24,7 +24,7 @@ In order to use this extension, the [LibMan CLI](https://docs.microsoft.com/en-u
 
 ## Quick Links
 
-- [Documentation](https://cake-contrib.github.io/Cake.LibMan)
+- [Documentation](https://cakebuild.net/dsl/libman/)
 
 ## Chat Room
 
