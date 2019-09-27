@@ -17,6 +17,11 @@
             Assert.Equal(parameterName, ((ArgumentNullException)exception).ParamName);
         }
 
+        public static void IsNotSupportException(this Exception exception)
+        {
+            Assert.IsType<NotSupportedException>(exception);
+        }
+
         public static void IsUriFormatException(this Exception exception)
         {
             Assert.IsType<UriFormatException>(exception);

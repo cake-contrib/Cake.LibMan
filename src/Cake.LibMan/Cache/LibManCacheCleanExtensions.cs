@@ -19,7 +19,7 @@ namespace Cake.LibMan.Cache
                 throw new ArgumentNullException(nameof(settings));
 
             if (provider == CdnProvider.filesystem)
-                throw new ArgumentException($"Invalid cdn Provider: {CdnProvider.Default}", nameof(provider));
+                throw new ArgumentException($"Invalid cdn Provider: {CdnProvider.filesystem}", nameof(provider));
 
             settings.Provider = provider;
             return settings;
