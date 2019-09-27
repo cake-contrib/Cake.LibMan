@@ -2,7 +2,7 @@
 
 namespace Cake.LibMan.Tests.Uninstall
 {
-    public class LibManRestoreTests
+    public class LibManUninstallerTests
     {
         public sealed class TheUninstallMethod
         {

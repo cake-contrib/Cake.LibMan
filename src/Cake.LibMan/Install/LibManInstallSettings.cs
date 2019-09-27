@@ -51,11 +51,11 @@ namespace Cake.LibMan.Install
             base.EvaluateCore(args);
 
             if (string.IsNullOrWhiteSpace(Library))
-                throw new ApplicationException($"Missing required {nameof(Library)} property.");
+                throw new ArgumentNullException(nameof(Library), $"Missing required {nameof(Library)} property.");
 
             args.Append(Library);
 
-            if (Destination == null)
+            if (Destination != null)
                 args.AppendSwitchQuoted("--destination", separator, Destination.FullPath);
 
             if (Provider != CdnProvider.Default)
