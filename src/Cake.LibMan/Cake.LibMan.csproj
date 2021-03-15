@@ -15,7 +15,7 @@
     <Authors>louisfischer, Cake-Contrib</Authors>
     <Company>Cake-Contrib</Company>
     <Copyright>Copyright © 2019 Cake Contributions Organization</Copyright>
-    <PackageTags>Cake Script LibMan Library-Manager</PackageTags>
+    <PackageTags>Cake Script LibMan Library-Manager cake-addin</PackageTags>
     <PackageIconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics@a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</PackageIconUrl>
     <PackageProjectUrl>http://cake-contrib.github.io/Cake.LibMan/</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
