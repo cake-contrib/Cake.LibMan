@@ -5,6 +5,40 @@ In order to use this extension, the [LibMan CLI](https://docs.microsoft.com/en-u
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://cake-contrib.mit-license.org)
 
+## Table of Cnontents
+
+- [Install](#install)
+- [Usage](#usage)
+- [Information](#information)
+- [Build Status](#build-status)
+- [Code Coverage](#code-coverage)
+- [Quick Links](#quick-links)
+- [Discussion](#discussion)
+
+## Install
+
+```cs
+#addin nuget:?package=Cake.LibMan&version={Version}
+```
+
+## Usage
+
+```cs
+#addin nuget:?package=Cake.LibMan&version={Version}
+// Add Libary Manager as global tool
+#tool dotnet:?package=Microsoft.Web.LibraryManager.Cli&version={version}&global
+
+Task("Restore-LibMan")
+.Does(() => {
+    var settings = new LibManRestoreSettings
+       {
+           WorkingDirectory = "./Directory/with/libmanFile",
+           Verbosity = LibManVerbosity.Detailed
+       };
+    LibManRestore(settings);
+});
+```
+
 ## Information
 
 |                |                                             Stable                                              |                                                                     Pre-release                                                                      |
